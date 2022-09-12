@@ -7,7 +7,7 @@ pipeline {
                         sh 'cp -R helm/* .'
 		        sh 'ls -ltr'
                         sh 'pwd'
-                        sh '/usr/local/bin/helm upgrade --install petclinic-app petclinic  --set image.repository=crdemo6.azurecr.io/06062000/petclinic '
+                        sh '/usr/local/bin/helm upgrade --install petclinic-app petclinic  --set image.repository=crdemo6.azurecr.io/06062000/petclinic --set image.tag=2 '
               			
             }           
         }
